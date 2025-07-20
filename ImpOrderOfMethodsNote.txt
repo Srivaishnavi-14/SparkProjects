@@ -1,0 +1,31 @@
+Step Method(s) Purpose / Notes
+1	select(), drop(), withColumn()	Choose columns, add new columns, or remove columns before transformations
+2	filter(), where()	Filter rows based on conditions
+3	join()	Combine with other DataFrames
+4	groupBy()	Group rows for aggregation
+5	agg(), aggregation functions	Aggregate grouped data (e.g., sum(), avg())
+6	orderBy(), sort()	Sort the results
+7	limit()	Limit the number of rows
+8	cache(), persist()	Cache the DataFrame in memory if needed
+9	write()	Write/save the final DataFrame
+
+Important Notes:
+-- groupBy() returns a GroupedData object, so you must call an aggregation method (agg(), count(), sum(), etc.) immediately after it.
+
+-- You cannot call select() before groupBy() if you want to aggregate, because select() returns a DataFrame without grouping.
+
+-- You can call select() after aggregation to pick/rename aggregated columns.
+
+-- Some methods, like withColumn(), can be used anytime before output.
+
+-- join() usually comes before grouping or aggregation to combine datasets.
+
+Example chain showing the order:
+df.select("col1", "col2") \
+  .filter("col1 > 5") \
+  .join(other_df, "key") \
+  .groupBy("col2") \
+  .agg({"col1": "avg"}) \
+  .orderBy("avg(col1)", ascending=False) \
+  .limit(10) \
+  .show()

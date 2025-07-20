@@ -1,0 +1,9 @@
+[
+  {"emp_id": 1, "name": "Alice", "dept_id": 10},
+  {"emp_id": 2, "name": "Bob", "dept_id": 20},
+  {"emp_id": 3, "name": "Charlie", "dept_id": 30},
+  {"emp_id": 4, "name": "David", "dept_id": 10},
+  {"emp_id": 5, "name": "Eva", "dept_id": 40},
+  {"emp_id": 6, "name": "Frank", "dept_id": null},
+  {"emp_id": 7, "name": "Grace", "dept_id": 50}
+]

@@ -1,0 +1,9 @@
+[
+  {"dept_row_id": 101, "dept_id": 10, "dept_name": "HR"},
+  {"dept_row_id": 102, "dept_id": 20, "dept_name": "Engineering"},
+  {"dept_row_id": 103, "dept_id": 30, "dept_name": "Finance"},
+  {"dept_row_id": 104, "dept_id": 40, "dept_name": "Marketing"},
+  {"dept_row_id": 105, "dept_id": 60, "dept_name": "Legal"},
+  {"dept_row_id": 106, "dept_id": 70, "dept_name": "R&D"},
+  {"dept_row_id": 107, "dept_id": null, "dept_name": "Unknown"}
+]
