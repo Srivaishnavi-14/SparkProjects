@@ -11,6 +11,6 @@ This repo contains **20+ problems** covering a wide range of Spark concepts:
 -  Partitioning & Bucketing
 -  Joins, Aggregations, and Window functions
 -  Optimization techniques (broadcast joins, coalesce, cache, etc.)
--  Delta Lake concepts 
+-  Delta Lake concepts
 
 Each problem is implemented as a standalone script/notebook with clear explanations and sample data
